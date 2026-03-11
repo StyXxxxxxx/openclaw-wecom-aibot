@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# OpenClaw local state (do not commit)
+.openclaw/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+

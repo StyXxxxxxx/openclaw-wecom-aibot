@@ -1,0 +1,63 @@
+{
+  "name": "wecom-aibot",
+  "version": "0.1.0",
+  "description": "OpenClaw channel plugin for WeCom AI Bot (WebSocket long connection)",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StyXxxxxxx/openclaw-wecom-aibot"
+  },
+  "bugs": {
+    "url": "https://github.com/StyXxxxxxx/openclaw-wecom-aibot/issues"
+  },
+  "homepage": "https://github.com/StyXxxxxxx/openclaw-wecom-aibot#readme",
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  },
+  "scripts": {
+    "clean": "node -e \"import('node:fs/promises').then(fs=>fs.rm('dist',{recursive:true,force:true}))\"",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev": "tsc -p tsconfig.json --watch",
+    "prepack": "npm run build",
+    "pack": "npm pack"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@wecom/aibot-node-sdk": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "openclaw": "^2026.2.6",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.9"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.0.0"
+  },
+  "keywords": [
+    "openclaw",
+    "wecom",
+    "wxwork",
+    "bot",
+    "websocket"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

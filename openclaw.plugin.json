@@ -1,0 +1,10 @@
+{
+  "id": "wecom-aibot",
+  "channels": ["wecom-aibot"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}
+
