@@ -1,5 +1,5 @@
 import type { ChannelPlugin } from "openclaw/plugin-sdk";
-import { DEFAULT_ACCOUNT_ID } from "openclaw/plugin-sdk";
+import { DEFAULT_ACCOUNT_ID } from "openclaw/plugin-sdk/account-id";
 import type { WeComAiBotAccount, WeComAiBotChannelConfig, WeComAiBotProbe } from "./types.js";
 import { listWeComAccountIds, resolveWeComAccount } from "./config.js";
 import { wecomGateway } from "./gateway.js";

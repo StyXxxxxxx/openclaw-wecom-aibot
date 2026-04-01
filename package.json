@@ -1,6 +1,6 @@
 {
   "name": "wecom-aibot",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "OpenClaw channel plugin for WeCom AI Bot (WebSocket long connection)",
   "license": "MIT",
   "type": "module",
@@ -39,11 +39,11 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@wecom/aibot-node-sdk": "^1.0.1"
+    "@wecom/aibot-node-sdk": "^1.0.4"
   },
   "devDependencies": {
     "@types/node": "^22.13.5",
-    "openclaw": "^2026.2.6",
+    "openclaw": "^2026.3.31",
     "typescript": "^5.7.3",
     "vitest": "^2.1.9"
   },

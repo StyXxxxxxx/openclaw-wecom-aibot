@@ -1,7 +1,9 @@
 import AiBot, { generateReqId } from "@wecom/aibot-node-sdk";
 import type { WSClient, WsFrame } from "@wecom/aibot-node-sdk";
-import type { ChannelGatewayContext, OutboundReplyPayload } from "openclaw/plugin-sdk";
-import { formatErrorMessage, waitUntilAbort } from "openclaw/plugin-sdk";
+import type { ChannelGatewayContext } from "openclaw/plugin-sdk";
+import { waitUntilAbort } from "openclaw/plugin-sdk/channel-runtime";
+import { formatErrorMessage } from "openclaw/plugin-sdk/error-runtime";
+import type { OutboundReplyPayload } from "openclaw/plugin-sdk/reply-payload";
 import type { WeComAiBotAccount } from "./types.js";
 import { getWeComRuntime } from "./runtime.js";
 
